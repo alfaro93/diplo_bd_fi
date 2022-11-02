@@ -1,0 +1,27 @@
+idle> select name, value from v$spparameter where value is not null;
+
+NAME                      VALUE                                                                                                         
+------------------------- ----------------------------------------------------------------------                                        
+processes                 640                                                                                                           
+nls_language              AMERICAN                                                                                                      
+nls_territory             AMERICA                                                                                                       
+sga_target                805306368                                                                                                     
+control_files             /u01/app/oracle/oradata/INICIALESDIP01/control01.ctl                                                                
+control_files             /u01/app/oracle/oradata/INICIALESDIP01/control02.ctl                                                                
+db_block_size             8192                                                                                                          
+compatible                19.0.0                                                                                                        
+undo_tablespace           UNDOTBS1                                                                                                      
+remote_login_passwordfile EXCLUSIVE                                                                                                     
+db_domain                 fi.unam                                                                                                       
+dispatchers               (PROTOCOL=TCP) (SERVICE=inicialesdip01XDB)                                                                          
+local_listener            LISTENER_INICIALESDIP01                                                                                             
+audit_file_dest           /u01/app/oracle/admin/inicialesdip01/adump                                                                          
+audit_trail               db                                                                                                            
+db_name                   inicialesdip01                                                                                                      
+open_cursors              300                                                                                                           
+pga_aggregate_target      268435456                                                                                                     
+diagnostic_dest           /u01/app/oracle                                                                                               
+
+19 rows selected.
+
+idle> exit
